@@ -27,8 +27,8 @@ This repository is licensed under the [MIT License](LICENSE).
 ## Contact
 
 For any inquiries or feedback, feel free to reach out at 
-# Gmail-sanjaykumarbaskaran02@email.com
-# LinkdedIn - https://www.linkedin.com/in/sanjay-kumar-397539211/
+Gmail - sanjaykumarbaskaran02@email.com
+LinkdedIn - https://www.linkedin.com/in/sanjay-kumar-397539211/
 
 **Hashtags:**
 
