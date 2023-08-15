@@ -61,34 +61,37 @@ class ContactUs extends Component {
         const { loading } = this.state;
 
         return (
-            <section>
-                <aside></aside>
-                <form>
-                    <div className="form_group">
-                        <label htmlFor="">Name</label>
-                        <input ref={this.inputRefs[0]} type="text" placeholder="enter your name" />
-                    </div>
-                    <div className="form_group">
-                        <label htmlFor="">Email</label>
-                        <input ref={this.inputRefs[1]} type="email" placeholder="enter your email" />
-                    </div>
-                    <div className="form_group">
-                        <label htmlFor="">Number</label>
-                        <input ref={this.inputRefs[2]} type="number" placeholder="enter your number" />
-                    </div>
-                    <div className="form_group">
-                        <label htmlFor="">Message</label>
-                        <textarea ref={this.inputRefs[3]} cols="30" rows="5" placeholder="message us what you think"></textarea>
-                    </div>
-                    <div className="form-group">
-                        <div className="col mt-3"><LoadCanvasTemplate /></div>
-                        <div className="col mt-3">
-                            <div><input placeholder="Enter Captcha Value" id="user_captcha_input" name="user_captcha_input" type="text" /></div>
-                        </div>                
-                    </div>
-                    <button className="btn" disabled={loading} onClick={() => this.doSubmit()}>subscribe</button>
-                </form>
-            </section>
+            <>
+            <h1>Custom ContactUS EmailJs</h1>
+                <section className="contactus">
+                    <aside></aside>
+                    <form>
+                        <div className="form_group">
+                            <label htmlFor="">Name</label>
+                            <input ref={this.inputRefs[0]} type="text" placeholder="enter your name" />
+                        </div>
+                        <div className="form_group">
+                            <label htmlFor="">Email</label>
+                            <input ref={this.inputRefs[1]} type="email" placeholder="enter your email" />
+                        </div>
+                        <div className="form_group">
+                            <label htmlFor="">Number</label>
+                            <input ref={this.inputRefs[2]} type="number" placeholder="enter your number" />
+                        </div>
+                        <div className="form_group">
+                            <label htmlFor="">Message</label>
+                            <textarea ref={this.inputRefs[3]} cols="30" rows="5" placeholder="message us what you think"></textarea>
+                        </div>
+                        <div className="form-group">
+                            <div className="col mt-3"><LoadCanvasTemplate /></div>
+                            <div className="col mt-3">
+                                <div><input placeholder="Enter Captcha Value" id="user_captcha_input" name="user_captcha_input" type="text" /></div>
+                            </div>                
+                        </div>
+                        <button className="btn" disabled={loading} onClick={() => this.doSubmit()}>subscribe</button>
+                    </form>
+                </section>
+            </>
         );
     }
 }
