@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import emailjs from "@emailjs/browser";
-import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
+import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
+import Menu from './componentMenu';
 
 class ContactUs extends Component {
     constructor(props) {
@@ -21,26 +22,34 @@ class ContactUs extends Component {
     componentDidMount() {
         emailjs.init(import.meta.env.VITE_PUBLIC_KEY);
         loadCaptchaEnginge(6);
-        console.log(import.meta.env.VITE_PUBLIC_KEY);
     }
 
     doSubmit = () => {
-        let user_captcha = document.getElementById('user_captcha_input').value;
- 
-        if (validateCaptcha(user_captcha) === true) {
-            alert('Captcha Matched');
-            // this.handleSubmit();
-            document.getElementById('user_captcha_input').value = "";
-         } else {
+        let userCaptcha = document.getElementById('user_captcha_input').value;
+
+        if (validateCaptcha(userCaptcha)) {
+            this.handleSubmit();
+        } else {
             alert('Captcha Does Not Match');
-            document.getElementById('user_captcha_input').value = "";
-         }
+        }
     };
 
     handleSubmit = async (e) => {
         e.preventDefault();
         const serviceId = import.meta.env.VITE_SERVICEID;
         const templateId = import.meta.env.VITE_TEMPLATEID;
+
+        // For these API keys goto https://www.emailjs.com/ 
+        // > sign Up with your email address 
+        // > connect with gmail account, create a template for email subscription
+        // > Then You will get all these keys 
+        // > And Save the keys in the .env file as
+        //     # EmailJs  ****** (copy this code and edit the keys) ********
+        //     VITE_PUBLIC_KEY  = "XXXXXXXXXXXXXX"
+        //     VITE_SERVICEID = "service_XXXXXX"
+        //     VITE_TEMPLATEID = "template_XXXXXX" 
+        // > Then try the contact form.
+
         try {
             await emailjs.send(serviceId, templateId, {
                 recipent: this.inputRefs[0].current.value,
@@ -62,7 +71,8 @@ class ContactUs extends Component {
 
         return (
             <>
-            <h1>Custom ContactUS EmailJs</h1>
+                <Menu />
+                <h1>Custom ContactUS EmailJs</h1>
                 <section className="contactus">
                     <aside></aside>
                     <form>
@@ -85,8 +95,8 @@ class ContactUs extends Component {
                         <div className="form-group">
                             <div className="col mt-3"><LoadCanvasTemplate /></div>
                             <div className="col mt-3">
-                                <div><input placeholder="Enter Captcha Value" id="user_captcha_input" name="user_captcha_input" type="text" /></div>
-                            </div>                
+                                <div><input placeholder="Enter Captcha" id="user_captcha_input" name="user_captcha_input" type="text" size="30" /></div>
+                            </div>
                         </div>
                         <button className="btn" disabled={loading} onClick={() => this.doSubmit()}>subscribe</button>
                     </form>

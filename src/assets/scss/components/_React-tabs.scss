@@ -1,0 +1,60 @@
+.img-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 70px;
+    min-height: 30vh;
+    
+    img{
+        max-width: 400px;
+    }
+
+    .tab-buttons {
+        margin-bottom: 80px;
+        button {
+            color: #C9AC8C;
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px 20px;
+            background: transparent;
+            margin: 0 30px;
+            border: none;
+
+            &.active {
+                border: 3px solid #fff;
+            }
+             
+        }
+    }
+    .tab-content {
+        & > div {
+            position: relative;
+            width: fit-content;
+            margin: 0 auto;
+            a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 0, 0, 85%);
+                border-radius: 10px;
+                text-decoration: none;
+                color: white;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transition: visibility 0s, opacity 0.5s linear;
+                transition: visibility 0s, opacity 0.5s linear;
+              }
+              &:hover {
+                a {
+                  padding: 8px 15px;
+                  visibility: visible;
+                  opacity: 1;
+                  max-width: 80%;
+                }
+            }
+        }
+    }
+}

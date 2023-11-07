@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import videoData from '../assets/json/yt_embed.json';
+import Menu from './componentMenu';
 
 class VideoPlaylist extends Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class VideoPlaylist extends Component {
 
     return (
         <>
+        <Menu />
         <h1>YouTube Video PlayList</h1>
         <div className="container">
             <div className="main-video-container">
@@ -36,11 +38,11 @@ class VideoPlaylist extends Component {
             <h3 className="main-vid-title">{mainVideoTitle}</h3>
             </div>
             <div className="video-list-container">
-            {videoData.map((video) => (
+            {videoData.map((video,index) => (
                 <div
-                className="list"
+                className= {currentVideo === video ? 'list active' : 'list'}
                 key={video.id} // Change this to match your video data property
-                onClick={() => this.handleVideoClick(video)}
+                onClick={() => this.handleVideoClick(video,index)}
                 >
                 <img
                     src={`https://img.youtube.com/vi/${video.videoId}/0.jpg`} // Change this to match your video ID property

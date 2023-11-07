@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
+import Menu from './componentMenu';
 
 class Captcha extends Component {
 
@@ -24,6 +25,7 @@ class Captcha extends Component {
 
        return (
         <>
+        <Menu />
         <h1>Captcha</h1>
             <div className="container">
                 <div className="form-group">

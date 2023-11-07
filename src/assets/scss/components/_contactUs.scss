@@ -1,0 +1,60 @@
+.contactus {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 60rem;
+	overflow: hidden;
+	background-color: #fff;
+	min-height: 37rem;
+	border-radius: 5px;
+	margin: 20px auto;
+
+	aside {
+	  background: url(/public/home.png) no-repeat center;
+	  background-size: cover;
+	}
+
+	form {
+		display: flex;
+		justify-content: center;
+		padding: 2rem;
+		display: grid;
+		gap: 1.5rem;
+		align-items: end;
+		align-content: center;
+		.form_group {
+		  display: grid;
+		  gap: 0.3rem;
+		}
+	  }
+	canvas {
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 5px 0 0 0;
+	  }
+	input, textarea {
+	  border: 2px solid #ecebf3;
+	  padding: 12px 8px;
+	  margin: 10px;
+	  outline: none;
+	  border: 0;
+	  font-size: 15px;
+	  background-color: #f5f5f5;
+	  border-radius: 5px;
+	}
+	label {
+	  text-transform: capitalize;
+	  color: #666;
+	}
+	input, button {
+	  border-radius: 5px;
+	}
+	.btn {
+	  background-color: #090817;
+	  color: #dcdbe4;
+	  padding: 1.3rem;
+	  font-family: inherit;
+	  border: none;
+	  margin-top: 1.3rem;
+	  font-size: 0.9em;
+	}
+}

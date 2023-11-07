@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+body {
+	background-color: #ccc;
+	overflow-x: hidden;
+	min-height: 50rem;
+	width: 100%;
+}
+#root {
+	text-align: center;
+}
+
+/////////////////////// home css ////////////////////////////
+.button-container {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 3rem;
+    
+    .button-menu {
+        max-width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    
+        .button-item {
+            list-style: none;
+            color: #000;
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 10px;
+            
+            a {
+                color: #000;
+            }
+            &:hover {
+                background-color: #000;
+                a {
+                    color: #fff;
+                }
+            }
+            &:has(a.active) {
+                background-color: #000;
+                box-shadow: 6px 5px 10px #000;
+                transform: scale(1.1);
+                a {
+                    color: #fff;
+                }
+            }
+            
+        }
+    }
+}
+
+.documentation {
+	text-align: left;
+	width: 100%;
+	max-width: 60rem;
+	margin: 0 auto;
+
+	h1,
+	p,
+	li {
+		margin: 10px 0;
+		list-style: none;
+	}
+
+	.contact {
+		margin-top: 8rem;
+		text-align: center;
+
+		ul {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 20px;
+
+			li {
+				background: #fff;
+				border-radius: 10px;
+				padding: 10px;
+				&:hover {
+					background: #000000;
+					svg {
+						fill: #fff;
+					}
+				}
+			}
+		}
+	}
+}
