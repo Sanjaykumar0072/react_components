@@ -5,14 +5,14 @@
 	margin-top: 10%;
 }
 .navbar {
-	background-color: #1f5156;
+	background-color: #89634A;
 	height: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
 	position: fixed;
-	top: 6.3rem;
+	top: 12rem;
 	left: 0;
 	width: 100%;
 	z-index: 20;
@@ -34,7 +34,7 @@
 	background-color: rgba(0,0,0,0.3);
 }
 .nav-logo {
-	color: #f5b921;
+	color: #ffff;
 	text-align: start;
 	margin-left: 20px;
 	cursor: pointer;
@@ -80,7 +80,7 @@
 	&:hover {
 		&:after {
 			width: 100%;
-			background: #ffdd40;
+			background: #D4B783;
 		}
 	}
 	&.active {

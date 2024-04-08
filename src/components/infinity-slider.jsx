@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import Menu from './componentMenu';
+import Menu from '../componentMenu';
 
 export default class InfinitySlider extends Component {
     jQuerycode = () => {
@@ -190,21 +190,22 @@ export default class InfinitySlider extends Component {
             <>
             <Menu />
             <div>
+                <span>If not running means refersh the page</span>
                 <div className="freeslide fs1">
                     <div className="fs-outer">
                         <div className="fs-container">
                             <div className="fs-inner">
                                 <ul className="fs-org">
-                                    <li><img src="public/img1.png" /></li>
-                                    <li><img src="public/img6.png" /></li>
-                                    <li><img src="public/img2.png" /></li>
-                                    <li><img src="public/img8.png" /></li>
-                                    <li><img src="public/img3.png" /></li>
-                                    <li><img src="public/img9.png" /></li>
-                                    <li><img src="public/img5.png" /></li>
-                                    <li><img src="public/img4.png" /></li>
-                                    <li><img src="public/img7.png" /></li>
-                                    <li><img src="public/img10.png" /></li>
+                                    <li><img src="/src/assets/images/img1.png" /></li>
+                                    <li><img src="/src/assets/images/img6.png" /></li>
+                                    <li><img src="/src/assets/images/img2.png" /></li>
+                                    <li><img src="/src/assets/images/img8.png" /></li>
+                                    <li><img src="/src/assets/images/img3.png" /></li>
+                                    <li><img src="/src/assets/images/img9.png" /></li>
+                                    <li><img src="/src/assets/images/img5.png" /></li>
+                                    <li><img src="/src/assets/images/img4.png" /></li>
+                                    <li><img src="/src/assets/images/img7.png" /></li>
+                                    <li><img src="/src/assets/images/img10.png" /></li>
                                 </ul>
                             </div>
                         </div>
@@ -215,16 +216,16 @@ export default class InfinitySlider extends Component {
                         <div className="fs-container">
                         <div className="fs-inner">
                             <ul className="fs-org">
-                            <li><img src="public/img1.png" /></li>
-                            <li><img src="public/img6.png" /></li>
-                            <li><img src="public/img2.png" /></li>
-                            <li><img src="public/img8.png" /></li>
-                            <li><img src="public/img3.png" /></li>
-                            <li><img src="public/img9.png" /></li>
-                            <li><img src="public/img5.png" /></li>
-                            <li><img src="public/img4.png" /></li>
-                            <li><img src="public/img7.png" /></li>
-                            <li><img src="public/img10.png" /></li>
+                            <li><img src="/src/assets/images/img1.png" /></li>
+                            <li><img src="/src/assets/images/img6.png" /></li>
+                            <li><img src="/src/assets/images/img2.png" /></li>
+                            <li><img src="/src/assets/images/img8.png" /></li>
+                            <li><img src="/src/assets/images/img3.png" /></li>
+                            <li><img src="/src/assets/images/img9.png" /></li>
+                            <li><img src="/src/assets/images/img5.png" /></li>
+                            <li><img src="/src/assets/images/img4.png" /></li>
+                            <li><img src="/src/assets/images/img7.png" /></li>
+                            <li><img src="/src/assets/images/img10.png" /></li>
                             </ul>
                         </div>
                         </div>

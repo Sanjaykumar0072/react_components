@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import videoData from '../assets/json/yt_embed.json';
-import Menu from './componentMenu';
+import Menu from '../componentMenu';
 
 class VideoPlaylist extends Component {
   constructor(props) {

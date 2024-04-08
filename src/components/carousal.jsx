@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Menu from './componentMenu';
+import Menu from '../componentMenu';
 
 const responsive = {
   superLargeDesktop: {
@@ -43,16 +43,16 @@ export default function Carousal() {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        <div><img src="public/img1.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
-        <div><img src="public/img6.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
-        <div><img src="public/img2.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
-        <div><img src="public/img8.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
-        <div><img src="public/img3.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
-        <div><img src="public/img9.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
-        <div><img src="public/img5.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
-        <div><img src="public/img4.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
-        <div><img src="public/img7.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
-        <div><img src="public/img10.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img1.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img6.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img2.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img8.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img3.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img9.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img5.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img4.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img7.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
+        <div><img src="/src/assets/images/img10.png" style={{ width: '250px', height: '200px', padding: '0 20px' }} /></div>
       </Carousel>
     </>
   )

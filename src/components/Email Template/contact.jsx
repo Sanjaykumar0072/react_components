@@ -1,7 +1,22 @@
 import React, { Component } from "react";
 import emailjs from "@emailjs/browser";
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
-import Menu from '../componentMenu';
+import { motion, useInView } from "framer-motion";
+
+const variants = {
+    initial: {
+        y: 100,
+        opacity: 0,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.5,
+            staggerChildren: 0.1,
+        },
+    },
+};
 
 class ContactUs extends Component {
     constructor(props) {
@@ -17,9 +32,11 @@ class ContactUs extends Component {
         this.state = {
             loading: false
         };
-    }
+    };
 
+    
     componentDidMount() {
+        this.isInView = useInView(this.ref, { margin: "-100px" });
         emailjs.init(import.meta.env.VITE_PUBLIC_KEY);
         loadCaptchaEnginge(6);
     }
@@ -71,7 +88,6 @@ class ContactUs extends Component {
 
         return (
             <>
-                <Menu />
                 <h1>Custom ContactUS EmailJs</h1>
                 <section className="contactus">
                     <aside></aside>

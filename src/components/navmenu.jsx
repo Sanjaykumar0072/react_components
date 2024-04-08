@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 import {NavLink} from 'react-router-dom';
-import Menu from './componentMenu';
+import Menu from '../componentMenu';
 
 export default function NavMenu() {
     const [click, setClick] = useState(false);
@@ -16,7 +16,7 @@ export default function NavMenu() {
                 <nav className="navbar" onClick={e => e.stopPropagation()}>
                     <div className="nav-container">
                         <NavLink exact to="/" className="nav-logo">
-                            CodeBucks
+                            NavMenu 
                             <i className="fa fa-code"></i>
                         </NavLink>
                         <ul className={click ? "nav-menu active" : "nav-menu"}>

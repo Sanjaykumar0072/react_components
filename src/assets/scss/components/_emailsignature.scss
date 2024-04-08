@@ -1,0 +1,29 @@
+// Responsive Design
+
+@media (max-width: 768px) {
+    .emailsignature {
+        table {
+            tbody {
+                tr {
+                    display: grid !important;
+
+                    td.left {
+                        div {
+                            width: 100% !important;
+                            height: 5px !important;
+                            background: rgb(41, 128, 185) !important;
+                            float: left !important;
+                        }
+                        img {
+                            width: 120px !important;
+                            height: 120px !important;
+                            margin: 0 auto 10px !important;
+                            float: none !important;
+                            clip-path: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

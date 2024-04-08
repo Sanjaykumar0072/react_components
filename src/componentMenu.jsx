@@ -1,7 +1,7 @@
 import react, { useState } from "react";
 import {NavLink} from 'react-router-dom';
 
-export default function Header() {
+export default function Menu() {
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
@@ -91,6 +91,78 @@ export default function Header() {
                                     className="button-links"
                                 >
                                     Carousal
+                                </NavLink>
+                            </li>
+                            <li className="button-item">
+                                <NavLink
+                                    exact="true"
+                                    to="/dropdown"
+                                    className="button-links"
+                                >
+                                    Dropdown
+                                </NavLink>
+                            </li>
+                            <li className="button-item">
+                                <NavLink
+                                    exact="true"
+                                    to="/multiselectwithsearch"
+                                    className="button-links"
+                                >
+                                    MultiselectWithSearch
+                                </NavLink>
+                            </li>
+                            <li className="button-item">
+                                <NavLink
+                                    exact="true"
+                                    to="/cookie"
+                                    className="button-links"
+                                >
+                                    Cookies
+                                </NavLink>
+                            </li>
+                            <li className="button-item">
+                                <NavLink
+                                    exact="true"
+                                    to="/zoom"
+                                    className="button-links"
+                                >
+                                    Zoom
+                                </NavLink>
+                            </li>
+                            <li className="button-item">
+                                <NavLink
+                                    exact="true"
+                                    to="/sidebar"
+                                    className="button-links"
+                                >
+                                    Sidebar
+                                </NavLink>
+                            </li>
+                            <li className="button-item">
+                                <NavLink
+                                    exact="true"
+                                    to="/parallax"
+                                    className="button-links"
+                                >
+                                    Parallax
+                                </NavLink>
+                            </li>
+                            <li className="button-item">
+                                <NavLink
+                                    exact="true"
+                                    to="/contactwithanim"
+                                    className="button-links"
+                                >
+                                    ContactWithAnimation
+                                </NavLink>
+                            </li>
+                            <li className="button-item">
+                                <NavLink
+                                    exact="true"
+                                    to="/signinpage"
+                                    className="button-links"
+                                >
+                                    SignInUpPage
                                 </NavLink>
                             </li>
                         </ul>
